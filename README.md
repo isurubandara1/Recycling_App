@@ -1,6 +1,6 @@
-# recyclingapp
+# Recycling App
 
-A new Flutter project.
+This app has been developed to be highly user-friendly and compatible using the Flutter framework to remove unnecessary materials from our houses. When consumers enter the details into this app, sellers can come and buy unnecessary materials from homeowners. It is easy and effective for both sellers and users.
 
 ## Getting Started
 
