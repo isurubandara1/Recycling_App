@@ -267,27 +267,39 @@ class home extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                // Add any BoxDecoration properties you need here
-              ),
+                  // Add any BoxDecoration properties you need here
+                  ),
               child: Center(
                 child: Stack(
                   children: [
-                      Positioned.fill(
-                    child: Image.asset(
-                      'assets/23.jpg',
-                      fit: BoxFit.fill,
+                    Positioned.fill(
+                      child: Container(
+                        color: Colors.black,
+                        child: Opacity(
+                          opacity: 0.3,
+                          child: Image.asset(
+                            'assets/23.jpg',
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
                     Positioned(
-                      top:0,
+                      top: 150,
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      child: Lottie.asset(
-                        'assets/lo5.json',
-                        width: double.infinity,
-                        height: double.infinity,
-                        fit: BoxFit.contain,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Text(
+                          "꧁༒☬ ℍ𝕖𝕪 𝕥𝕙𝕖𝕣𝕖! ☬༒꧂\n\n ℍ𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕕𝕒𝕪, \n\n 𝕎𝕖 𝕒𝕣𝕖 𝕡𝕝𝕖𝕒𝕤𝕖𝕕 𝕥𝕠 𝕚𝕟𝕗𝕠𝕣𝕞 𝕪𝕠𝕦 𝕥𝕙𝕒𝕥 𝕪𝕠𝕦 𝕟𝕠𝕨 𝕙𝕒𝕧𝕖 𝕥𝕙𝕖 𝕠𝕡𝕡𝕠𝕣𝕥𝕦𝕟𝕚𝕥𝕪\𝕟 𝕥𝕠 𝕔𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕖 𝕥𝕠 \n𝕔𝕣𝕖𝕒𝕥𝕚𝕟𝕘 𝕒 𝕓𝕖𝕒𝕦𝕥𝕚𝕗𝕦𝕝 𝕖𝕟𝕧𝕚𝕣𝕠𝕟𝕞𝕖𝕟𝕥 𝕚𝕟 𝕥𝕙𝕖 𝕒𝕣𝕖𝕒 𝕤𝕦𝕣𝕣𝕠𝕦𝕟𝕕𝕚𝕟𝕘 𝕦𝕤. ",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 23,
+                              fontWeight: FontWeight.normal,
+                              fontStyle: FontStyle.italic,
+                              color: Colors.white70),
+                        ),
                       ),
                     ),
                     Positioned(
@@ -299,7 +311,8 @@ class home extends StatelessWidget {
                                 builder: (context) => Epage1(
                                     email: '$email', username: '$username'))),
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: const Color.fromARGB(255, 243, 242, 234),
+                          foregroundColor:
+                              const Color.fromARGB(255, 243, 242, 234),
                           backgroundColor: Color.fromARGB(255, 13, 109, 16),
                           padding: const EdgeInsets.all(20),
                           fixedSize: const Size(110, 70),

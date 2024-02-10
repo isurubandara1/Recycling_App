@@ -5,7 +5,6 @@ import 'package:recyclingapp/signin.dart';
 import '../contact.dart';
 import 'Epage2.dart';
 
-
 class Epage1 extends StatelessWidget {
   String? email;
   String? username;
@@ -104,31 +103,14 @@ class Epage1 extends StatelessWidget {
                       ),
                       Center(
                         child: Padding(
-                          padding: EdgeInsets.all(5),
+                          padding: EdgeInsets.all(10),
                           child: Text(
-                            'Hey there!.. Have a good day ',
+                            'If you have excess materials in your area,\n such as glass, metal, plastic, and so on, you can inform us. Our services will come and collect these materials, and you can receive a certain happy amount based on the  materials weight. So Come forward to know about those amounts. ',
+                            textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontSize: 24,
+                              fontSize: 13,
                               fontWeight: FontWeight.bold,
                               color: Color.fromARGB(255, 10, 20, 10),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        child: Center(
-                          child: Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text(
-                              'We are pleased to inform you that you now have the opportunity to contribute to creating a beautiful environment in the area surrounding us. ',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 10, 20, 10)),
                             ),
                           ),
                         ),
@@ -137,27 +119,10 @@ class Epage1 extends StatelessWidget {
                         child: Padding(
                           padding: EdgeInsets.all(10),
                           child: Text(
-                            'If you have excess materials in your area, such as glass, metal, plastic, and so on, you can inform us and request for their removal. Our services will come and collect these materials, and you can receive a certain happy amount based on the weight of the materials. So Come forward to know about those amounts. We are hoping for your support to help beautify our environment. ',
+                            'Not only that, If you happen to notice a large amount of any of the aforementioned \nmaterials on the road or in the surrounding area, please inform us by providing the necessary details. Your support would be greatly appreciated. Go ahead and help us create a cleaner and more beautiful environment. ',
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              color: Color.fromARGB(255, 10, 20, 10),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Center(
-                        child: Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            'Not only that, If you happen to notice a large amount of any of the aforementioned materials on the road or in the surrounding area, please inform us by providing the necessary details. Your contribution and support would be greatly appreciated. Go ahead and take the initiative to help us create a cleaner and more beautiful environment. ',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 22,
+                              fontSize: 13,
                               fontWeight: FontWeight.bold,
                               color: Color.fromARGB(255, 10, 20, 10),
                             ),
@@ -168,11 +133,11 @@ class Epage1 extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(200, 20, 10, 0),
                           child: ElevatedButton(
-                            onPressed: () =>
-                                Navigator.of(context).push(MaterialPageRoute(
+                            onPressed: () => Navigator.of(context).push(
+                                MaterialPageRoute(
                                     builder: (context) => Epage2(
-                                            email: '$email', username: '$username'
-                                        ))),
+                                        email: '$email',
+                                        username: '$username'))),
                             style: ElevatedButton.styleFrom(
                                 foregroundColor:
                                     const Color.fromARGB(255, 243, 242, 234),
