@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'Epage4.dart';
 
-
 class User {
   final String name;
   final String address;
@@ -11,13 +10,13 @@ class User {
   final int contact;
   final String materials;
 
-  User(
-      {required this.name,
-      required this.address,
-      required this.contact,
-      required this.seTown,
-      required this.materials,
-      });
+  User({
+    required this.name,
+    required this.address,
+    required this.contact,
+    required this.seTown,
+    required this.materials,
+  });
 }
 
 class Epage3i extends StatefulWidget {
@@ -26,7 +25,8 @@ class Epage3i extends StatefulWidget {
 
   Epage3i({required this.email, required this.username});
   @override
-  _Epage3State createState() => _Epage3State(email: '$email', username: '$username');
+  _Epage3State createState() =>
+      _Epage3State(email: '$email', username: '$username');
 }
 
 class _Epage3State extends State<Epage3i> {
@@ -59,11 +59,11 @@ class _Epage3State extends State<Epage3i> {
       'Address': user.address,
       'Contact': user.contact,
       'Town': user.seTown,
-      'Materials':user.materials,
+      'Materials': user.materials,
     });
   }
 
-  String seTown = 'Alawwa';
+  String seTown = 'Kurunegala';
 
   @override
   Widget build(BuildContext context) {
@@ -214,6 +214,13 @@ class _Epage3State extends State<Epage3i> {
                     ),
                     items: [
                       DropdownMenuItem<String>(
+                        value: 'Kurunegala',
+                        child: Text(
+                          'Kurunegala',
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
                         value: 'Alawwa',
                         child: Text(
                           'Alawwa',
@@ -224,13 +231,6 @@ class _Epage3State extends State<Epage3i> {
                         value: 'Galgamuwa',
                         child: Text(
                           'Galgamuwa',
-                          style: TextStyle(fontSize: 16, color: Colors.black),
-                        ),
-                      ),
-                      DropdownMenuItem<String>(
-                        value: 'Kurunegala',
-                        child: Text(
-                          'Kurunegala',
                           style: TextStyle(fontSize: 16, color: Colors.black),
                         ),
                       ),
@@ -300,7 +300,7 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 25,
                 ),
-                  Padding(
+                Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
                     'Enter the materials that you would like to provide to us                                                                                                                                                                            ',
@@ -334,7 +334,7 @@ class _Epage3State extends State<Epage3i> {
                     ),
                   ),
                 ),
-                SizedBox( 
+                SizedBox(
                   height: 10,
                 ),
                 Center(

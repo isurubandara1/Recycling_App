@@ -186,67 +186,6 @@ class home extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(
-                Icons.language,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Languages",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Contact()),
-                );
-              },
-            ),
-            ListTile(
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
-                child: const Text(
-                  "සිංහල",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
-                child: const Text(
-                  "தமிழ்",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
-                child: const Text(
-                  "English",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(
                 Icons.logout,
                 color: Colors.brown,
               ),
@@ -274,9 +213,9 @@ class home extends StatelessWidget {
                   children: [
                     Positioned.fill(
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.white,
                         child: Opacity(
-                          opacity: 0.3,
+                          opacity: 0.5,
                           child: Image.asset(
                             'assets/23.jpg',
                             fit: BoxFit.fill,
@@ -298,7 +237,7 @@ class home extends StatelessWidget {
                               fontSize: 23,
                               fontWeight: FontWeight.normal,
                               fontStyle: FontStyle.italic,
-                              color: Colors.white70),
+                              color: Color.fromARGB(255, 5, 128, 10)),
                         ),
                       ),
                     ),

@@ -5,21 +5,20 @@ import '../home.dart';
 import 'Epage2.dart';
 import 'Epage3i.dart';
 
-
 class Epage3 extends StatefulWidget {
   final String? email;
   final String? username;
 
   Epage3({required this.email, required this.username});
   @override
-  _Epage3State createState() => _Epage3State(email: '$email', username: '$username');
+  _Epage3State createState() =>
+      _Epage3State(email: '$email', username: '$username');
 }
 
 class _Epage3State extends State<Epage3> {
   String? email;
   String? username;
   _Epage3State({required this.email, required this.username});
-
 
   @override
   Widget build(BuildContext context) {
@@ -28,36 +27,20 @@ class _Epage3State extends State<Epage3> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(
-            children: [
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
-                child: IconButton(
-                  iconSize: 25,
-                  icon: const Icon(
-                    Icons.sentiment_dissatisfied,
+          children: [
+            Expanded(
+              child: const Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(5, 6, 7, 7),
+                child: Text(
+                  'Selection bar',
+                  style: TextStyle(
+                    fontSize: 26,
                   ),
-                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Epage2(
-                            email: '$email',
-                            username: '$username',
-                          ))),
                 ),
               ),
-              Expanded(
-                child: const Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(5, 6, 7, 7),
-                  
-                    child: Text(
-                      'Selection bar',
-                      style: TextStyle(
-                        fontSize: 26,
-                      ),
-                    ),
-                  ),
-              
-              ),
-            ],
-          ),
+            ),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -82,8 +65,12 @@ class _Epage3State extends State<Epage3> {
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                    onPressed: () => Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) => Epage3i(email: '$email', username: '',))),
+                    onPressed: () =>
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Epage3i(
+                                  email: '$email',
+                                  username: '',
+                                ))),
                     style: ElevatedButton.styleFrom(
                         foregroundColor:
                             const Color.fromARGB(255, 243, 242, 234),
@@ -140,8 +127,12 @@ class _Epage3State extends State<Epage3> {
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                     onPressed: () => Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) => Epage3ii(email: '$email', username: '',))),
+                    onPressed: () =>
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Epage3ii(
+                                  email: '$email',
+                                  username: '',
+                                ))),
                     style: ElevatedButton.styleFrom(
                         foregroundColor:
                             const Color.fromARGB(255, 243, 242, 234),
@@ -201,4 +192,3 @@ class _Epage3State extends State<Epage3> {
     );
   }
 }
-
