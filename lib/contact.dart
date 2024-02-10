@@ -6,247 +6,248 @@ class Contact extends StatelessWidget {
   const Contact({key});
   @override
   Widget build(BuildContext context) {
-    // Material App
     return MaterialApp(
         home: Scaffold(
+
+            //Appbar
             appBar: AppBar(
-        backgroundColor:Colors.green,
-        iconTheme: IconThemeData(
-      color: Colors.white, // Change the color here
-    ),
-        title: const Center(
-          child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
-            child: Expanded(
-              child: Text
-            (
-              ' Recycling App',
-              style: TextStyle(
+              backgroundColor: Colors.green,
+              iconTheme: IconThemeData(
                 color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
               ),
-            ),
-          ),
-        ),),
-        actions: [
-          Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0, 2, 20, 0),
-              child: IconButton(
-                icon: const Icon(
-                  Icons.home,
-                  size: 32,
-                ),
-                onPressed: () {},
-              )),
-        ],
-      ),
-      drawer: Drawer(
-        backgroundColor: Colors.white,
-        child: ListView(
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.green,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                    radius: 50.0,
-                    backgroundImage: AssetImage('assets/9.jpg'),
-                  ),
-                  SizedBox(height: 10.0),
-                  Text(
-                    'Your Name',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
+              title: const Center(
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
+                  child: Expanded(
+                    child: Text(
+                      ' Recycling App',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
+                  ),
+                ),
+              ),
+
+              //action
+              actions: [
+                Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(0, 2, 20, 0),
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.home,
+                        size: 32,
+                      ),
+                      onPressed: () {},
+                    )),
+              ],
+            ),
+
+            //Drawer
+            drawer: Drawer(
+              backgroundColor: Colors.white,
+              child: ListView(
+                children: [
+                  const DrawerHeader(
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          radius: 50.0,
+                          backgroundImage: AssetImage('assets/9.jpg'),
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          'Your Name',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.home,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "Home",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  const SizedBox(
+                    height: 2,
+                  ),
+                  const SizedBox(
+                    height: 2,
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.account_circle,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "My Profile",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  const SizedBox(
+                    height: 2,
+                  ),
+                  ListTile(
+                      leading: const Icon(
+                        Icons.login,
+                        color: Colors.brown,
+                      ),
+                      title: const Text(
+                        "Signin",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      onTap: () {}),
+                  const SizedBox(
+                    height: 2,
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.policy,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "Privacy Policies",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  const SizedBox(
+                    height: 2,
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.phone,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "Contactus",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Contact()),
+                      );
+                    },
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.language,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "Languages",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Contact()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Padding(
+                      padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
+                      child: Text(
+                        "සිංහල",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Padding(
+                      padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
+                      child: Text(
+                        "தமிழ்",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Padding(
+                      padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
+                      child: Text(
+                        "English",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.logout,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
+                      "Logout",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    onTap: () {},
                   ),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 8,
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.home,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Home",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {},
-            ),
-            const SizedBox(
-              height: 2,
-            ),
-            const SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.account_circle,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "My Profile",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {},
-            ),
-            const SizedBox(
-              height: 2,
-            ),
-            ListTile(
-                leading: const Icon(
-                  Icons.login,
-                  color: Colors.brown,
-                ),
-                title: const Text(
-                  "Signin",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                  ),
-                ),
-                onTap: () {}),
-            const SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.policy,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Privacy Policies",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {},
-            ),
-            const SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.phone,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Contactus",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Contact()),
-                );
-              },
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-             ListTile(
-              leading: const Icon(
-                Icons.language,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Languages",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Contact()),
-                );
-              },
-            ),
-              ListTile(
-              
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100,0,0,0),
-                child: const Text(
-                  "සිංහල",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                     fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-             ListTile(
-              
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100,0,0,0),
-                child: const Text(
-                  "தமிழ்",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-             ListTile(
-              
-              title: Padding(
-                padding: const EdgeInsets.fromLTRB(100,0,0,0),
-                child: const Text(
-                  "English",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                     fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            
-            
-            
-            ListTile(
-              leading: const Icon(
-                Icons.logout,
-                color: Colors.brown,
-              ),
-              title: const Text(
-                "Logout",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-              ),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
+
+            //body
             body: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -255,31 +256,38 @@ class Contact extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 10.0),
+
                     Row(
                       children: [
-                        Expanded(
-                          child: Text
-                        ("Get in touch, We'd love to hear from you. Our friendly team is always here to chat.",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 28, 53, 34),
-                                fontSize: 23.0,
-                                fontWeight: FontWeight.bold)),),
+                        //Text
+                        const Expanded(
+                          child: Text(
+                              "Get in touch, We'd love to hear from you. Our friendly team is always here to chat.",
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 28, 53, 34),
+                                  fontSize: 23.0,
+                                  fontWeight: FontWeight.bold)),
+                        ),
+
+                        //animation image
                         Padding(
                           padding:
                               const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
-                          child:  Expanded(
-                          child:Container(
-                            child: Lottie.asset(
-                              'assets/lo4.json',
-                              width: 120,
-                              height: 120,
-                              fit: BoxFit.contain,
+                          child: Expanded(
+                            child: Container(
+                              child: Lottie.asset(
+                                'assets/lo4.json',
+                                width: 120,
+                                height: 120,
+                                fit: BoxFit.contain,
+                              ),
                             ),
-                            
-                          ),),
+                          ),
                         ),
                       ],
                     ),
+
+                    //Phone number 1
                     const SizedBox(height: 50.0),
                     Row(children: [
                       Icon(
@@ -296,6 +304,8 @@ class Contact extends StatelessWidget {
                                 fontWeight: FontWeight.bold, fontSize: 20)),
                       ),
                     ]),
+
+                    //Phone number 2
                     Row(children: [
                       TextButton(
                         onPressed: () {
@@ -308,6 +318,8 @@ class Contact extends StatelessWidget {
                       ),
                     ]),
                     const SizedBox(height: 15.0),
+
+                    //email
                     Row(children: [
                       Icon(
                         Icons.email,
@@ -324,6 +336,8 @@ class Contact extends StatelessWidget {
                       ),
                     ]),
                     const SizedBox(height: 10.0),
+
+                    //website
                     Row(children: [
                       const Icon(
                         Icons.language,
@@ -340,15 +354,17 @@ class Contact extends StatelessWidget {
                       ),
                     ]),
                     const SizedBox(height: 15.0),
-                    Row(children: [
-                      const Padding(
+
+                    //Address
+                    const Row(children: [
+                      Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                         child: Icon(
                           Icons.home,
                           color: Colors.brown,
                         ),
                       ),
-                      Column(children: const [
+                      Column(children: [
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Text(
@@ -366,7 +382,7 @@ class Contact extends StatelessWidget {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
-                                 color: Colors.blue)),
+                                  color: Colors.blue)),
                         ),
                         Padding(
                           padding:
@@ -384,7 +400,7 @@ class Contact extends StatelessWidget {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
-                                 color: Colors.blue)),
+                                  color: Colors.blue)),
                         ),
                       ])
                     ]),
