@@ -4,8 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:recyclingapp/IntroScreen.dart';
 import 'package:recyclingapp/signup.dart';
 
-
-
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
 void main() async {
@@ -24,5 +22,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
- 
-
