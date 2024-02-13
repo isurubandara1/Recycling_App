@@ -68,6 +68,7 @@ class _Epage3State extends State<Epage3i> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //Appbar
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(
@@ -86,6 +87,8 @@ class _Epage3State extends State<Epage3i> {
           ],
         ),
       ),
+
+      //body
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -107,6 +110,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 10,
                 ),
+
+                //Enter your name
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
@@ -145,6 +150,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 25,
                 ),
+
+                //Enter your address
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
@@ -182,6 +189,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 25,
                 ),
+
+                //Enter your nealy town
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
@@ -261,6 +270,8 @@ class _Epage3State extends State<Epage3i> {
                   height: 6,
                 ),
                 SizedBox(height: 16.0),
+
+                //Enter your contact number
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
@@ -300,6 +311,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 25,
                 ),
+
+                //Enter the materials that you would like to provide to us
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Text(
@@ -337,6 +350,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 10,
                 ),
+
+                //Button
                 Center(
                   child: Padding(
                     padding: const EdgeInsetsDirectional.all(10),
@@ -390,6 +405,8 @@ class _Epage3State extends State<Epage3i> {
                 SizedBox(
                   height: 10,
                 ),
+
+                //View My Price
                 Center(
                   child: TextButton(
                     child: Text(
@@ -415,12 +432,6 @@ class _Epage3State extends State<Epage3i> {
     );
   }
 }
-
-
-
-
-
-
 
 // import 'package:flutter/material.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
