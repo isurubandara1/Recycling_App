@@ -58,10 +58,11 @@ class _Epage3State extends State<Epage3ii> {
 
   @override
   Widget build(BuildContext context) {
-    // Material App
     return MaterialApp(
         home: Scaffold(
             //backgroundColor: Color.fromARGB(255, 220, 122, 223),
+
+            //Appbar
             appBar: AppBar(
               backgroundColor: Colors.green,
               title: Row(
@@ -93,12 +94,15 @@ class _Epage3State extends State<Epage3ii> {
                 ],
               ),
             ),
+
+            //body
             body: SingleChildScrollView(
                 child: Padding(
                     padding: const EdgeInsets.all(12),
                     child: Column(
                         //mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
+                          //Topic sentence
                           Padding(
                               padding: EdgeInsets.all(5),
                               child: Text(
@@ -109,6 +113,8 @@ class _Epage3State extends State<Epage3ii> {
                                     fontWeight: FontWeight.bold,
                                     color: Color.fromARGB(255, 7, 136, 28)),
                               )),
+
+                          //first Image
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 7, 7, 7, 0),
@@ -130,6 +136,8 @@ class _Epage3State extends State<Epage3ii> {
                           SizedBox(
                             height: 10,
                           ),
+
+                          //first sentence
                           Padding(
                               padding: EdgeInsets.all(10),
                               child: Text(
@@ -144,6 +152,8 @@ class _Epage3State extends State<Epage3ii> {
                           SizedBox(
                             height: 25,
                           ),
+
+                          //first textfield
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Form(
@@ -178,6 +188,8 @@ class _Epage3State extends State<Epage3ii> {
                                   SizedBox(
                                     height: 25,
                                   ),
+
+                                  //second row
                                   Padding(
                                     padding:
                                         EdgeInsets.symmetric(horizontal: 15),
@@ -204,6 +216,8 @@ class _Epage3State extends State<Epage3ii> {
                                   SizedBox(
                                     height: 25,
                                   ),
+
+                                  //thired Row contact
                                   Padding(
                                     padding:
                                         EdgeInsets.symmetric(horizontal: 15),
@@ -242,6 +256,8 @@ class _Epage3State extends State<Epage3ii> {
                                   SizedBox(
                                     height: 2,
                                   ),
+
+                                  //image upload button
                                   Center(
                                     child: Padding(
                                       padding:
@@ -271,6 +287,8 @@ class _Epage3State extends State<Epage3ii> {
                                       ),
                                     ),
                                   ),
+
+                                  //Button
                                   Center(
                                     child: AnimatedButton(
                                       width: 180,
@@ -285,7 +303,7 @@ class _Epage3State extends State<Epage3ii> {
                                           title: 'Success',
                                           desc:
                                               'This is correct action success',
-                                          btnCancelOnPress: (){},
+                                          btnCancelOnPress: () {},
                                           btnOkOnPress: () {
                                             if (_formKey.currentState!
                                                 .validate()) {

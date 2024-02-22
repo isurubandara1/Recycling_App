@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:recyclingapp/signin.dart';
 
-import 'home.dart';
-
-//import on board me dependency
-
 class IntroScreen extends StatefulWidget {
   const IntroScreen({super.key});
 
@@ -18,17 +14,12 @@ class IntroScreen extends StatefulWidget {
 class _IntroScreen extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
-    //this is a page decoration for intro screen
     PageDecoration pageDecoration = const PageDecoration(
       titleTextStyle: TextStyle(
-          fontSize: 28.0,
-          fontWeight: FontWeight.w700,
-          color: Colors.white), //tile font size, weight and color
+          fontSize: 28.0, fontWeight: FontWeight.w700, color: Colors.white),
       bodyTextStyle: TextStyle(fontSize: 19.0, color: Colors.white),
-      //body text size and color
       descriptionPadding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
-      //decription padding
-      imagePadding: EdgeInsets.all(20), //image padding
+      imagePadding: EdgeInsets.all(20),
       boxDecoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topRight,
@@ -41,13 +32,17 @@ class _IntroScreen extends State<IntroScreen> {
             Color.fromARGB(255, 4, 77, 22),
           ],
         ),
-      ), //show linear gradient background of page
+      ),
     );
 
     return IntroductionScreen(
       globalBackgroundColor: Color.fromARGB(255, 22, 122, 25),
 
       pages: [
+<<<<<<< HEAD
+=======
+        //first screen
+>>>>>>> dev
         PageViewModel(
           title: "ප්‍රතිචක්‍රීකරණය",
           body:
@@ -71,6 +66,11 @@ class _IntroScreen extends State<IntroScreen> {
           ),
           decoration: pageDecoration,
         ),
+<<<<<<< HEAD
+=======
+
+        //second screen
+>>>>>>> dev
         PageViewModel(
           title: "Recycling",
           body:
@@ -94,6 +94,11 @@ class _IntroScreen extends State<IntroScreen> {
           ),
           decoration: pageDecoration,
         ),
+<<<<<<< HEAD
+=======
+
+        //thired screen
+>>>>>>> dev
         PageViewModel(
           title: "மீள் சுழற்சி",
           body:
@@ -124,16 +129,28 @@ class _IntroScreen extends State<IntroScreen> {
       showSkipButton: true,
       skipFlex: 0,
       nextFlex: 0,
+
+      //skip TextButton
       skip: const Text(
         'Skip',
         style: TextStyle(color: Colors.white, fontSize: 20),
       ),
+<<<<<<< HEAD
       next: const Icon(Icons.arrow_forward, color: Colors.white, size: 32),
+=======
+
+      //arrow Button
+      next: const Icon(Icons.arrow_forward, color: Colors.white, size: 32),
+
+      //Next TextButton
+>>>>>>> dev
       done: const Text(
         'Next',
         style: TextStyle(
             fontWeight: FontWeight.w600, color: Colors.white, fontSize: 20),
       ),
+
+      //
       dotsDecorator: const DotsDecorator(
         size: Size(10.0, 10.0), //size of dots
         color: Colors.white, //color of dots
@@ -155,7 +172,6 @@ class _IntroScreen extends State<IntroScreen> {
   }
 
   Widget introImage(String assetName) {
-    //widget to show intro image
     return Align(
       alignment: Alignment.bottomCenter,
       child: Image.asset(assetName, width: 350.0),

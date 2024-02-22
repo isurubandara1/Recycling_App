@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'Epage1.dart';
 import 'Epage3.dart';
 
-
 class Epage2 extends StatefulWidget {
   final String? email;
   final String? username;
 
   Epage2({required this.email, required this.username});
   @override
-  _Epage2State createState() => _Epage2State(email: '$email', username: '$username');
+  _Epage2State createState() =>
+      _Epage2State(email: '$email', username: '$username');
 }
 
 class _Epage2State extends State<Epage2> {
@@ -18,10 +18,11 @@ class _Epage2State extends State<Epage2> {
   _Epage2State({required this.email, required this.username});
   @override
   Widget build(BuildContext context) {
-    // Material App
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
+
+        //AppBar
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Row(
@@ -54,12 +55,15 @@ class _Epage2State extends State<Epage2> {
             ],
           ),
         ),
+
+        //body
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: Column(children: [
               Stack(
                 children: [
+                  //first image
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10, 10, 10, 0),
@@ -78,6 +82,8 @@ class _Epage2State extends State<Epage2> {
                       ),
                     ),
                   ),
+
+                  //sentence in image
                   Center(
                     child: Padding(
                       padding: EdgeInsets.all(60),
@@ -93,6 +99,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ],
               ),
+
+              //fisrt row glass
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -153,6 +161,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ),
               ),
+
+              //second row plastic
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -220,6 +230,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ),
               ),
+
+              //thired row raber
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -290,6 +302,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ),
               ),
+
+              //forth row paper
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -360,6 +374,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ),
               ),
+
+              //fifth row iron/matel
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -430,6 +446,8 @@ class _Epage2State extends State<Epage2> {
                   ),
                 ),
               ),
+
+              //sixth row E waste
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
@@ -503,12 +521,18 @@ class _Epage2State extends State<Epage2> {
               SizedBox(
                 height: 25,
               ),
+
+              //Button
               Center(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(190, 0, 10, 0),
                   child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Epage3(email: '$email', username: '$username',))),
+                    onPressed: () =>
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Epage3(
+                                  email: '$email',
+                                  username: '$username',
+                                ))),
                     style: ElevatedButton.styleFrom(
                         foregroundColor:
                             const Color.fromARGB(255, 243, 242, 234),

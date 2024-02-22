@@ -11,10 +11,11 @@ class Epage1 extends StatelessWidget {
   Epage1({required this.email, required this.username});
   @override
   Widget build(BuildContext context) {
-    // Material App
     return MaterialApp(
         home: Scaffold(
             backgroundColor: Color.fromARGB(255, 241, 243, 241),
+
+            //AppBar
             appBar: AppBar(
               backgroundColor: Colors.green,
               iconTheme: IconThemeData(
@@ -72,7 +73,10 @@ class Epage1 extends StatelessWidget {
                     )),
               ],
             ),
+
+            //body
             body: Container(
+              //Background Image
               width: double.infinity,
               height: double.infinity,
               decoration: BoxDecoration(
@@ -86,6 +90,7 @@ class Epage1 extends StatelessWidget {
                   padding: const EdgeInsets.all(10),
                   child: Column(
                     children: [
+                      //Animation Image
                       Center(
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
@@ -101,6 +106,8 @@ class Epage1 extends StatelessWidget {
                           ),
                         ),
                       ),
+
+                      //Sentence
                       Center(
                         child: Padding(
                           padding: EdgeInsets.all(10),
@@ -115,6 +122,8 @@ class Epage1 extends StatelessWidget {
                           ),
                         ),
                       ),
+
+                      //sentence
                       Center(
                         child: Padding(
                           padding: EdgeInsets.all(10),
@@ -129,6 +138,8 @@ class Epage1 extends StatelessWidget {
                           ),
                         ),
                       ),
+
+                      //Elevated Button
                       Center(
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(200, 20, 10, 0),

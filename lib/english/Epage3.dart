@@ -24,6 +24,8 @@ class _Epage3State extends State<Epage3> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
+      //AppBar
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(
@@ -42,12 +44,15 @@ class _Epage3State extends State<Epage3> {
           ],
         ),
       ),
+
+      //body
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(5.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              //Animation image
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Center(
@@ -61,6 +66,8 @@ class _Epage3State extends State<Epage3> {
                   ),
                 ),
               ),
+
+              // first Button
               Center(
                 child: Padding(
                   padding: const EdgeInsets.all(10),
@@ -123,6 +130,8 @@ class _Epage3State extends State<Epage3> {
               SizedBox(
                 height: 5,
               ),
+
+              //second Button
               Center(
                 child: Padding(
                   padding: const EdgeInsets.all(10),

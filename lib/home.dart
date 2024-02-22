@@ -14,6 +14,8 @@ class home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 189, 247, 191),
+
+      //AppBar
       appBar: AppBar(
         backgroundColor: Colors.green,
         iconTheme: IconThemeData(
@@ -34,6 +36,8 @@ class home extends StatelessWidget {
             ),
           ),
         ),
+
+        //action of appBar
         actions: [
           Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 2, 20, 0),
@@ -46,10 +50,13 @@ class home extends StatelessWidget {
               )),
         ],
       ),
+
+      //Drawer
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
           children: [
+            //
             DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.green,
@@ -75,6 +82,8 @@ class home extends StatelessWidget {
                 ],
               ),
             ),
+
+            //
             const SizedBox(
               height: 8,
             ),
@@ -201,21 +210,22 @@ class home extends StatelessWidget {
           ],
         ),
       ),
+
+      //body part
       body: Column(
         children: [
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
-                  // Add any BoxDecoration properties you need here
-                  ),
+              decoration: BoxDecoration(),
               child: Center(
                 child: Stack(
                   children: [
+                    //main background image
                     Positioned.fill(
                       child: Container(
-                        color: Colors.white,
+                        color: Colors.white, // opacity color
                         child: Opacity(
-                          opacity: 0.5,
+                          opacity: 0.5, // opacity quantity
                           child: Image.asset(
                             'assets/23.jpg',
                             fit: BoxFit.fill,
@@ -223,6 +233,8 @@ class home extends StatelessWidget {
                         ),
                       ),
                     ),
+
+                    //sentences
                     Positioned(
                       top: 150,
                       left: 0,
@@ -235,12 +247,14 @@ class home extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 23,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.w600,
                               fontStyle: FontStyle.italic,
-                              color: Color.fromARGB(255, 5, 128, 10)),
+                              color: Color.fromARGB(255, 2, 66, 4)),
                         ),
                       ),
                     ),
+
+                    //Button
                     Positioned(
                       bottom: 15,
                       right: 35,
