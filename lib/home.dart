@@ -247,9 +247,9 @@ class home extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 23,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.w600,
                               fontStyle: FontStyle.italic,
-                              color: Color.fromARGB(255, 5, 128, 10)),
+                              color: Color.fromARGB(255, 2, 66, 4)),
                         ),
                       ),
                     ),
