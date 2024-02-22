@@ -70,7 +70,7 @@ class LoadingScreen extends StatelessWidget {
           ),
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 15, right: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -79,10 +79,10 @@ class LoadingScreen extends StatelessWidget {
                     height: 30,
                   ),
                   Text(
-                    '𝖂𝖊𝖑𝖈𝖔𝖒𝖊 \n We are pleased that you use this app.\n Now, you are one of the contributors \n who are helping beautify our environment',
+                    '𝖂𝖊𝖑𝖈𝖔𝖒𝖊 \n 𝔚𝔢 𝔞𝔯𝔢 𝔭𝔩𝔢𝔞𝔰𝔢𝔡 𝔱𝔥𝔞𝔱 𝔶𝔬𝔲 𝔞𝔯𝔢 𝔲𝔰𝔦𝔫𝔤 𝔬𝔲𝔯 𝔞𝔭𝔭',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 32,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic,
