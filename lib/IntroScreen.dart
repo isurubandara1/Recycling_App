@@ -39,10 +39,7 @@ class _IntroScreen extends State<IntroScreen> {
       globalBackgroundColor: Color.fromARGB(255, 22, 122, 25),
 
       pages: [
-<<<<<<< HEAD
-=======
         //first screen
->>>>>>> dev
         PageViewModel(
           title: "ප්‍රතිචක්‍රීකරණය",
           body:
@@ -66,11 +63,8 @@ class _IntroScreen extends State<IntroScreen> {
           ),
           decoration: pageDecoration,
         ),
-<<<<<<< HEAD
-=======
 
         //second screen
->>>>>>> dev
         PageViewModel(
           title: "Recycling",
           body:
@@ -94,11 +88,8 @@ class _IntroScreen extends State<IntroScreen> {
           ),
           decoration: pageDecoration,
         ),
-<<<<<<< HEAD
-=======
 
         //thired screen
->>>>>>> dev
         PageViewModel(
           title: "மீள் சுழற்சி",
           body:
@@ -135,15 +126,11 @@ class _IntroScreen extends State<IntroScreen> {
         'Skip',
         style: TextStyle(color: Colors.white, fontSize: 20),
       ),
-<<<<<<< HEAD
-      next: const Icon(Icons.arrow_forward, color: Colors.white, size: 32),
-=======
 
       //arrow Button
       next: const Icon(Icons.arrow_forward, color: Colors.white, size: 32),
 
       //Next TextButton
->>>>>>> dev
       done: const Text(
         'Next',
         style: TextStyle(
