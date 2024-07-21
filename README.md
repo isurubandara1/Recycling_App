@@ -1,16 +1,52 @@
 # Recycling App
 
-This app has been developed to be highly user-friendly and compatible using the Flutter framework to remove unnecessary materials from our houses. When consumers enter the details into this app, sellers can come and buy unnecessary materials from homeowners. It is easy and effective for both sellers and users.
+This app has been developed to be highly user-friendly and compatible with the Flutter framework to facilitate the removal of unnecessary materials from homes. Users can easily list items they want to dispose of, and sellers can browse these listings to purchase materials. This application aims to make the process of recycling and reusing materials simple and effective for both homeowners and sellers.
+
+![App Screenshot](https://github.com/user-attachments/assets/f669d5c3-80ea-4637-9a38-79de56178843)
+
+## Features
+
+- **User Registration and Authentication:**
+  - Secure sign-up and login functionality using Firebase Authentication.
+  - Supports email/password authentication for easy access.
+
+- **Material Listing:**
+  - Users can create listings for materials they want to dispose of.
+  - Each listing includes a title, description, category, and images of the material.
+  - Users can specify the condition and location of the material.
+
+- **Material Search and Filtering:**
+  - Sellers can search for available materials using keywords.
+  - Categories, location, condition, and more can filter listings.
+  - Real-time search results powered by Firebase Firestore.
+
+- **Firestore Database Integration:**
+  - All data is stored in Firebase Firestore, providing updates.
+  - Any changes to listings are immediately reflected for all users.
+
+- **Notifications:**
+  - Users receive real-time notifications for new listings and updates.
+  - Push notifications alert sellers about materials that match their interests.
+
+- **User Profiles:**
+  - Each user has a profile with their contact information and listed materials.
+  - Users can edit their profiles and manage their listings from a central dashboard.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Before you start, ensure you have the following installed:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter SDK** (>=2.0.0)
+- **Dart SDK** (>=2.12.0)
+- **Firebase Account**
+- **Android Studio** or **VS Code**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/recycling-app.git
+   cd recycling-app
